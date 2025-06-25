@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College Bike Pass Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f9f8;
+      padding: 40px;
+    }
+    .form-container {
+      background: #fff;
+      max-width: 500px;
+      margin: auto;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background: #2980b9;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1f6391;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>🛵 College Bike Pass Form</h2>
+    <form action="submit.php" method="POST">
+      <label>Student Name:</label>
+      <input type="text" name="student_name" required>
+
+      <label>Registration Number:</label>
+      <input type="text" name="reg_no" required>
+
+      <label>Vehicle Number:</label>
+      <input type="text" name="vehicle_no" required>
+
+      <label>Vehicle Type:</label>
+      <select name="vehicle_type" required>
+        <option value="">-- Select --</option>
+        <option value="Bike">Bike</option>
+        <option value="Scooter">Scooter</option>
+      </select>
+
+      <label>Driving License Number:</label>
+      <input type="text" name="dl_no" required>
+
+      <label>RC Book Number:</label>
+      <input type="text" name="rc_book_no" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
